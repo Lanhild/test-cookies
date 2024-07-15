@@ -6,6 +6,27 @@
       href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- Matomo -->
+    <script>
+      var _paq = (window._paq = window._paq || []);
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["requireConsent"]);
+      _paq.push(["requireCookieConsent"]);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//matomo/";
+        _paq.push(["setTrackerUrl", u + "matomo.php"]);
+        _paq.push(["setSiteId", "1"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.async = true;
+        g.src = u + "matomo.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
   </head>
   <body>
     <h1 class="hello">CookieConsent - Consent Pending</h1>
@@ -20,13 +41,13 @@
       type="module"
       data-src="scripts/hello.js"
       data-category="analytics"
-      data-service="Numigi Analytics"
+      data-service="Analytics"
     ></script>
     <script
       type="module"
       data-src="scripts/greeting.js"
       data-category="analytics"
-      data-service="Numigi Greetings"
+      data-service="Greetings"
     ></script>
   </body>
 </html>

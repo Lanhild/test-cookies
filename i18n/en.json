@@ -46,6 +46,12 @@
                             "domain": "Website",
                             "description": "Detects your browser language.",
                             "expiration": "N/A"
+                        },
+                        {
+                            "name": "cc_cookie",
+                            "domain": "Website",
+                            "description": "Stores your consent to cookies.",
+                            "expiration": "N/A"
                         }
                     ]
                 }

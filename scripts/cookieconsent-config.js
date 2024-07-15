@@ -27,4 +27,13 @@ CookieConsent.run({
       },
     },
   },
+  onChange: ({ changedCategories }) => {
+    if (changedCategories.includes("analytics")) {
+      if (!CookieConsent.acceptedCategory("analytics")) {
+        _paq.push(["forgetConsentGiven"]);
+      } else {
+        _paq.push(["setConsentGiven"]);
+      }
+    }
+  },
 });
