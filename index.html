@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <!-- head content -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="hello">CookieConsent - Consent Pending</h1>
+    <p class="greeting"></p>
+    <br />
+    <br />
+    <button type="button" data-cc="show-preferencesModal">
+      View Cookie Preferences
+    </button>
+    <script type="module" src="scripts/cookieconsent-config.js"></script>
+    <script
+      type="module"
+      data-src="scripts/hello.js"
+      data-category="analytics"
+      data-service="Numigi Analytics"
+    ></script>
+    <script
+      type="module"
+      data-src="scripts/greeting.js"
+      data-category="analytics"
+      data-service="Numigi Greetings"
+    ></script>
+  </body>
+</html>
